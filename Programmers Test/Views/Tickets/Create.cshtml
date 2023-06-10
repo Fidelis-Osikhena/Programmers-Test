@@ -1,0 +1,70 @@
+﻿@model Programmers_Test.Models.TicketViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create New Ticket</h1>
+
+<form asp-action="Create">
+    <div class="form-group" style="padding-bottom: 20px;">
+        <label asp-for="Project" class="control-label">Project Name</label>
+        <input asp-for="Project" class="form-control" />
+        <span asp-validation-for="Project" class="text-danger"></span>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 20px;">
+        <label asp-for="DepartmentId">Department</label>
+        <select asp-for="DepartmentId" asp-items="ViewBag.DepartmentId" class="form-control">
+            <option value="">-- Select Department --</option>
+        </select>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 20px;">
+        <label asp-for="EmployeeId">Requested By</label>
+        <select asp-for="EmployeeId" asp-items="ViewBag.EmployeeId" class="form-control" disabled>
+            <option value="">-- Select Employee --</option>
+        </select>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 20px;">
+        <label asp-for="Description">Description of Problem</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <div class="form-group" style="padding-top: 20px;">
+        @Html.ActionLink("Search Tickets", "Search", "Tickets", null, new { @class = "btn btn-primary" })
+    </div>
+
+    <div class="form-group" style="padding-top: 20px;">
+        @Html.ActionLink("Chart", "Chart", "Tickets", null, new { @class = "btn btn-primary" })
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#DepartmentId").change(function () {
+                var departmentId = $(this).val();
+                $("#EmployeeId").empty(); // Clear existing options first
+                $.getJSON(`/api/Employee/GetByDepartment/${departmentId}`, function (data) {
+                    var items = '<option value="">-- Select Employee --</option>';
+                    console.log(data);
+                    $.each(data, function (i, employee) {
+                        items += `<option value="${employee.id}">${employee.name}</option>`;
+                    });
+                    $('#EmployeeId').prop('disabled', data.length == 0);
+                    $('#EmployeeId').html(items);
+                });
+            });
+        });
+    </script>
+}
+
+

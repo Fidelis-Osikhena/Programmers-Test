@@ -1,0 +1,39 @@
+﻿@model Programmers_Test.Models.TicketSearchViewModel
+
+@{
+    ViewData["Title"] = "Chart";
+}
+
+<h2>Chart</h2>
+
+<div id="chart_div" style="width: 100%; height: 500px;"></div>
+
+@section Scripts {
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            fetch('/Tickets/ProjectTicketCounts')
+                .then(response => response.json())
+                .then(data => {
+                    var dataArray = [['Project', 'Tickets']];
+                    data.forEach(item => {
+                        dataArray.push([item.projectName, item.count]);
+                    });
+
+                    var data = google.visualization.arrayToDataTable(dataArray);
+
+                    var options = {
+                        title: 'Project Ticket Counts',
+                        is3D: true,
+                    };
+
+                    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                    chart.draw(data, options);
+                });
+        }
+    </script>
+}
+

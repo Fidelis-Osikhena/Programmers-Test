@@ -1,0 +1,47 @@
+﻿@model Programmers_Test.Models.TicketSearchViewModel
+
+
+<h1>Search Tickets</h1>
+
+<!-- Search Form -->
+<form asp-action="Search" method="get">
+    <p>
+        Project Name: <input type="text" name="SearchString">
+        <input type="submit" value="Search" />
+    </p>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Search" asp-route-sortOrder="@(ViewData["ProjectSort"]?.ToString())">Project Name</a>
+            </th>
+            <th>
+                <a asp-action="Search" asp-route-sortOrder="@(ViewData["DepartmentSort"]?.ToString())">Department</a>
+            </th>
+            <th>
+                <a asp-action="Search" asp-route-sortOrder="@(ViewData["DateSort"]?.ToString())">Date</a>
+            </th>
+            <th>
+                <a asp-action="Search" asp-route-sortOrder="@(ViewData["RequestorSort"]?.ToString())">Requestor</a>
+            </th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ticket in Model.Tickets)
+        {
+            <tr>
+                <td>@ticket.Project</td>
+                <td>@Html.DisplayFor(modelItem => ticket.Department.DepartmentName)</td>
+                <td>@ticket.DateTimeSubmitted.ToString("g")</td>
+                <td>@Html.DisplayFor(modelItem => ticket.Employee.EmployeeName)</td>
+                <td>@ticket.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="form-group">
+    @Html.ActionLink("Create New Ticket", "Create", "Tickets", null, new { @class = "btn btn-primary" })
+</div>
