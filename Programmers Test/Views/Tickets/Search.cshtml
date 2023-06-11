@@ -1,7 +1,9 @@
 ﻿@model Programmers_Test.Models.TicketSearchViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
 
-<h1>Search Tickets</h1>
+<h1>@Localizer["SearchTickets"]</h1>
 
 <!-- Search Form -->
 <form asp-action="Search" method="get">
@@ -15,16 +17,16 @@
     <thead>
         <tr>
             <th>
-                <a asp-action="Search" asp-route-sortOrder="@(ViewData["ProjectSort"]?.ToString())">Project Name</a>
+                <a asp-action="Search" asp-route-sortOrder="@(ViewData["ProjectSort"]?.ToString())">@Localizer["ProjectNameLabel"]</a>
             </th>
             <th>
-                <a asp-action="Search" asp-route-sortOrder="@(ViewData["DepartmentSort"]?.ToString())">Department</a>
+                <a asp-action="Search" asp-route-sortOrder="@(ViewData["DepartmentSort"]?.ToString())">@Localizer["DepartmentNameLabel"]</a>
             </th>
             <th>
-                <a asp-action="Search" asp-route-sortOrder="@(ViewData["DateSort"]?.ToString())">Date</a>
+                <a asp-action="Search" asp-route-sortOrder="@(ViewData["DateSort"]?.ToString())">@Localizer["ProjectNameLabel"]</a>
             </th>
             <th>
-                <a asp-action="Search" asp-route-sortOrder="@(ViewData["RequestorSort"]?.ToString())">Requestor</a>
+                <a asp-action="Search" asp-route-sortOrder="@(ViewData["RequestorSort"]?.ToString())">@Localizer["RequestedByLabel"]</a>
             </th>
             <th>Description</th>
         </tr>

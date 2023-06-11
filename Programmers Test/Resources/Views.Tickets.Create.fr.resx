@@ -118,27 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ChartButton" xml:space="preserve">
-    <value>Chart</value>
+    <value>Graphique</value>
   </data>
-  <data name="CreateLabel" xml:space="preserve">
-    <value>Create New Ticket</value>
+  <data name="Create" xml:space="preserve">
+    <value>Créer nouveau billet</value>
   </data>
   <data name="DepartmentNameLabel" xml:space="preserve">
-    <value>Department</value>
+    <value>Département</value>
   </data>
   <data name="DescriptionLabel" xml:space="preserve">
     <value>Description</value>
   </data>
   <data name="ProjectNameLabel" xml:space="preserve">
-    <value>Project Name</value>
+    <value>Nom du Projet</value>
   </data>
   <data name="RequestedByLabel" xml:space="preserve">
-    <value>Employee</value>
+    <value>Employé</value>
   </data>
   <data name="SearchTickets" xml:space="preserve">
-    <value>Search</value>
+    <value>Recherche</value>
   </data>
   <data name="SubmitButton" xml:space="preserve">
-    <value>Submit</value>
+    <value>Soumettre</value>
   </data>
 </root>

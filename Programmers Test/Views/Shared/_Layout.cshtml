@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Programmers_Test</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Programmers Test</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,6 +26,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
+                    <select id="cultureSelect">
+                        <option value="en">English</option>
+                        <option value="fr">Francais</option>
+                    </select>
+                        <script>
+                            document.getElementById('cultureSelect').addEventListener('change', function(){
+                                document.cookie = '.AspNetCore.Culture=C=' + this.value +'|UIC=' + this.value + '; path=/';
+                                location.reload();
+                            });
+                        </script>   
                 </div>
             </div>
         </nav>

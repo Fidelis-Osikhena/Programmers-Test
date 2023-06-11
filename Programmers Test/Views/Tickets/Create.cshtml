@@ -1,41 +1,43 @@
 ﻿@model Programmers_Test.Models.TicketViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
 
 @{
     ViewData["Title"] = "Create";
 }
-
-<h1>Create New Ticket</h1>
+<h1><p>@Localizer["Create"]</p></h1>
 
 <form asp-action="Create">
     <div class="form-group" style="padding-bottom: 20px;">
-        <label asp-for="Project" class="control-label">Project Name</label>
+        <label asp-for="Project" class="control-label">@Localizer["Create"]</label>
         <input asp-for="Project" class="form-control" />
         <span asp-validation-for="Project" class="text-danger"></span>
     </div>
 
     <div class="form-group" style="padding-bottom: 20px;">
-        <label asp-for="DepartmentId">Department</label>
+        <label asp-for="DepartmentId">@Localizer["DepartmentNameLabel"]</label>
         <select asp-for="DepartmentId" asp-items="ViewBag.DepartmentId" class="form-control">
             <option value="">-- Select Department --</option>
         </select>
     </div>
 
     <div class="form-group" style="padding-bottom: 20px;">
-        <label asp-for="EmployeeId">Requested By</label>
+        <label asp-for="EmployeeId">@Localizer["RequestedByLabel"]</label>
         <select asp-for="EmployeeId" asp-items="ViewBag.EmployeeId" class="form-control" disabled>
             <option value="">-- Select Employee --</option>
         </select>
     </div>
 
     <div class="form-group" style="padding-bottom: 20px;">
-        <label asp-for="Description">Description of Problem</label>
+        <label asp-for="Description">@Localizer["DescriptionLabel"]</label>
         <textarea asp-for="Description" class="form-control"></textarea>
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">@Localizer["SubmitButton"]</button>
 
     <div class="form-group" style="padding-top: 20px;">
-        @Html.ActionLink("Search Tickets", "Search", "Tickets", null, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Search", "Search", "Tickets", null, new { @class = "btn btn-primary" })
 
         @Html.ActionLink("Chart", "Chart", "Tickets", null, new { @class = "btn btn-primary" })
     </div>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 using Programmers_Test.Data;
 using Programmers_Test.Models;
 using System.Web.Mvc;
@@ -16,10 +17,12 @@ namespace Programmers_Test.Controllers
     public class TicketsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IStringLocalizer<TicketsController> _localizer;
 
-        public TicketsController(AppDbContext context)
+        public TicketsController(AppDbContext context, IStringLocalizer<TicketsController> localizer)
         {
             _context = context;
+            _localizer = localizer;
         }
         public ActionResult Create()
         {
