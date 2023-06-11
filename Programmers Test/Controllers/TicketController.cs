@@ -7,6 +7,7 @@ using ActionResult = Microsoft.AspNetCore.Mvc.ActionResult;
 using Controller = Microsoft.AspNetCore.Mvc.Controller;
 using HttpGetAttribute = Microsoft.AspNetCore.Mvc.HttpGetAttribute;
 using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
+using JsonResult = Microsoft.AspNetCore.Mvc.JsonResult;
 using SelectList = Microsoft.AspNetCore.Mvc.Rendering.SelectList;
 using ValidateAntiForgeryTokenAttribute = Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute;
 
@@ -129,7 +130,7 @@ namespace Programmers_Test.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Chart()
+        public async Task<JsonResult> ProjectTicketCounts()
         {
             var projectTicketCounts = await _context.Tickets
                 .GroupBy(t => t.Project)
@@ -137,6 +138,11 @@ namespace Programmers_Test.Controllers
                 .ToListAsync();
 
             return Json(projectTicketCounts);
+        }
+
+        public ActionResult Chart()
+        {
+            return View();
         }
 
 

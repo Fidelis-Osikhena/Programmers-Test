@@ -53,7 +53,7 @@
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Tickets}/{action=Create}/{id?}");
+                    pattern: "{controller=Tickets}/{action=Chart}/{id?}");
             });
         }
     }
