@@ -312,3 +312,7 @@ C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\P
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Chart.en.resources
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Chart.fr.resources
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Create.en.resources
+C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Shared._Layout.en.resources
+C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Shared._Layout.fr.resources
+C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Home.Index.en.resources
+C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Home.Index.fr.resources

@@ -8,7 +8,6 @@
     using Microsoft.EntityFrameworkCore;
     using Programmers_Test.Data;
     using Microsoft.AspNetCore.Localization;
-    using System.Globalization;
     using Microsoft.AspNetCore.Mvc.Razor;
     using Microsoft.Extensions.Options;
 
@@ -80,7 +79,7 @@
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Tickets}/{action=Create}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

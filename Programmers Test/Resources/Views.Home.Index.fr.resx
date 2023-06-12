@@ -120,13 +120,16 @@
   <data name="ChartButton" xml:space="preserve">
     <value>Graphique</value>
   </data>
-  <data name="Count" xml:space="preserve">
-    <value>Nombre de tickets de projet</value>
-  </data>
   <data name="Create" xml:space="preserve">
     <value>Créer nouveau billet</value>
   </data>
+  <data name="Disc" xml:space="preserve">
+    <value>Système de billetterie par Fidelis Osikhena</value>
+  </data>
   <data name="SearchTickets" xml:space="preserve">
     <value>Recherche</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Test du programmeur Bell</value>
   </data>
 </root>

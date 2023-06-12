@@ -126,4 +126,7 @@
   <data name="Create" xml:space="preserve">
     <value>Create New Ticket</value>
   </data>
+  <data name="SearchTickets" xml:space="preserve">
+    <value>Search</value>
+  </data>
 </root>
