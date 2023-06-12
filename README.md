@@ -8,4 +8,6 @@ The application supports bilingual interfaces, in English and French.
 <br /><br />
 The application has been built using .NET Framework, MVC5 and Entity Framework, with the front-end designed using Bootstrap and JQuery. The database interactions are handled using SQLServer. The application is developed primarily using C#, with CSS and JavaScript for styling and interactive elements.
 <br /><br />
-A Local SQLServer was used as I was unable to set up a remote one in time but the SQL DB Scripts and Queries can be found in the SQL Scripts folder.
+The type of SQL Server to use was not mentioned so local one was used as I was unable to set up a remote one in time but it can definately be done.
+<br /><br />
+The SQL DB Scripts and Queries can be found in the SQL Scripts folder.
