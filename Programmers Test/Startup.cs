@@ -40,7 +40,8 @@
 
                 options.RequestCultureProviders = new List<IRequestCultureProvider> 
                 {
-                    new QueryStringRequestCultureProvider()
+                    new QueryStringRequestCultureProvider(),
+                    new CookieRequestCultureProvider()
                 };
             });
 
@@ -79,7 +80,7 @@
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Tickets}/{action=Search}/{id?}");
+                    pattern: "{controller=Tickets}/{action=Create}/{id?}");
             });
         }
     }

@@ -120,25 +120,10 @@
   <data name="ChartButton" xml:space="preserve">
     <value>Graphique</value>
   </data>
-  <data name="CreateLabel" xml:space="preserve">
+  <data name="Count" xml:space="preserve">
+    <value>Nombre de tickets de projet</value>
+  </data>
+  <data name="Create" xml:space="preserve">
     <value>Créer nouveau billet</value>
-  </data>
-  <data name="DepartmentNameLabel" xml:space="preserve">
-    <value>Département</value>
-  </data>
-  <data name="DescriptionLabel" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="ProjectNameLabel" xml:space="preserve">
-    <value>Nom du Projet</value>
-  </data>
-  <data name="RequestedByLabel" xml:space="preserve">
-    <value>Employé</value>
-  </data>
-  <data name="SearchTickets" xml:space="preserve">
-    <value>Recherche</value>
-  </data>
-  <data name="SubmitButton" xml:space="preserve">
-    <value>Soumettre</value>
   </data>
 </root>

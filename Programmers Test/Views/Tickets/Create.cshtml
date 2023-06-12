@@ -1,7 +1,5 @@
 ﻿@model Programmers_Test.Models.TicketViewModel
-@using Microsoft.AspNetCore.Mvc.Localization
 
-@inject IViewLocalizer Localizer
 
 @{
     ViewData["Title"] = "Create";
@@ -36,13 +34,15 @@
 
     <button type="submit" class="btn btn-primary">@Localizer["SubmitButton"]</button>
 
-    <div class="form-group" style="padding-top: 20px;">
-        @Html.ActionLink("Search", "Search", "Tickets", null, new { @class = "btn btn-primary" })
-
-        @Html.ActionLink("Chart", "Chart", "Tickets", null, new { @class = "btn btn-primary" })
-    </div>
-
 </form>
+<div class="form-group" style="padding-top: 20px;">
+    <form action="@Url.Action("Search", "Tickets", new { culture = Context.Request.RouteValues["culture"] })" method="get">
+        <input type="submit" value=@Localizer["SearchTickets"] />
+    </form>
+    <form action="@Url.Action("Chart", "Tickets", new { culture = Context.Request.RouteValues["culture"] })" method="get">
+        <input type="submit" value=@Localizer["ChartButton"] />
+    </form>
+</div>
 
 @section Scripts {
     @{

@@ -123,6 +123,9 @@
   <data name="Create" xml:space="preserve">
     <value>Create New Ticket</value>
   </data>
+  <data name="DateLabel" xml:space="preserve">
+    <value>Date Submitted</value>
+  </data>
   <data name="DepartmentNameLabel" xml:space="preserve">
     <value>Department</value>
   </data>
@@ -137,8 +140,5 @@
   </data>
   <data name="SearchTickets" xml:space="preserve">
     <value>Search</value>
-  </data>
-  <data name="SubmitButton" xml:space="preserve">
-    <value>Submit</value>
   </data>
 </root>

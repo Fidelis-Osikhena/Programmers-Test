@@ -279,8 +279,6 @@ C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\bin\Debug\net6.0\r
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.csproj.AssemblyReference.cache
-C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Controllers.TicketController.en.resources
-C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Controllers.TicketController.fr.resources
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Create.fr.resources
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.csproj.GenerateResource.cache
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.GeneratedMSBuildEditorConfig.editorconfig
@@ -311,3 +309,6 @@ C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\P
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\ref\Programmers_Test.dll
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Search.en.resources
 C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Search.fr.resources
+C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Chart.en.resources
+C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Chart.fr.resources
+C:\Users\Oddfr\source\repos\Programmers Test\Programmers Test\obj\Debug\net6.0\Programmers_Test.Resources.Views.Tickets.Create.en.resources

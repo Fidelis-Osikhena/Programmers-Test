@@ -120,25 +120,10 @@
   <data name="ChartButton" xml:space="preserve">
     <value>Chart</value>
   </data>
+  <data name="Count" xml:space="preserve">
+    <value>Number of Project Tickets</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Create New Ticket</value>
-  </data>
-  <data name="DepartmentNameLabel" xml:space="preserve">
-    <value>Department</value>
-  </data>
-  <data name="DescriptionLabel" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="ProjectNameLabel" xml:space="preserve">
-    <value>Project Name</value>
-  </data>
-  <data name="RequestedByLabel" xml:space="preserve">
-    <value>Employee</value>
-  </data>
-  <data name="SearchTickets" xml:space="preserve">
-    <value>Search</value>
-  </data>
-  <data name="SubmitButton" xml:space="preserve">
-    <value>Submit</value>
   </data>
 </root>
